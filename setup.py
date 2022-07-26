@@ -33,7 +33,7 @@ def main():
 
     package_name = "pyppbox"
 
-    long_description = "Pure Python toolbox for people detection, tracking, and re-identification... "
+    long_description = "Pure Python toolbox for people detecting, tracking, and re-identifying... "
 
     packages = ['pyppbox', 'pyppbox.cfg', 'pyppbox.dt_openpose', 
                 'pyppbox.dt_openpose.models', 'pyppbox.dt_openpose.models.cameraParameters', 
@@ -92,9 +92,9 @@ def main():
     skbuild.setup(
         name=package_name,
         version=package_version,
-        url="https://github.com/rathaumons/pyppbox",
-        license="Refer to LICENSE_NOTICES.pdf",
-        description="Python toolbox for people detection, tracking, and re-identification",
+        url="https://github.com/rathaumons/pyppbox-paper",
+        license="Complicated",
+        description="Python toolbox for people detecting, tracking, and re-identifying",
         long_description=long_description,
         long_description_content_type="text/markdown",
         packages=packages,
@@ -104,12 +104,13 @@ def main():
         install_requires=None,
         python_requires="==3.9.*",
         classifiers=[
-            "Development Status :: Beta",
+            "Development Status :: 4 - Beta",
             "Environment :: Console",
             "Intended Audience :: Developers",
             "Intended Audience :: Education",
             "Intended Audience :: Information Technology",
             "Intended Audience :: Science/Research",
+            "License :: OSI Approved :: Complicated (Kindly refer to LICENSE_NOTICES.pdf)",
             "Operating System :: Microsoft :: Windows",
             "Programming Language :: Python",
             "Programming Language :: Python :: 3",
@@ -125,7 +126,7 @@ def main():
 
 
 def get_and_set_info_static():
-    return "1.0b6"
+    return "1.0b6+paper"
 
 
 class EmptyListWithLength(list):
