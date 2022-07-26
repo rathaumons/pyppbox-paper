@@ -451,7 +451,7 @@ class Ui_PPTSLauncher(object):
 
     def takeMeToGitHub(self, _):
         self.treid_info_label.setStyleSheet("color: rgb(0, 0, 255)")
-        webbrowser.open('https://github.com/rathaumons/pyppbox.git')
+        webbrowser.open('https://github.com/rathaumons/pyppbox-paper.git')
 
 
 
