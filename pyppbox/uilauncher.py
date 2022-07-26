@@ -244,7 +244,7 @@ class Ui_PPTSLauncher(object):
 
     def retranslateUi(self, PPTSLauncher):
         _translate = QtCore.QCoreApplication.translate
-        PPTSLauncher.setWindowTitle(_translate("PPTSLauncher", "PPTS Launcher"))
+        PPTSLauncher.setWindowTitle(_translate("PPTSLauncher", "pyppbox Launcher (Paper Edition)"))
         self.launch_pushButton.setText(_translate("PPTSLauncher", "LAUNCH"))
         self.detector_comboBox.setItemText(0, _translate("PPTSLauncher", "None"))
         self.detector_comboBox.setItemText(1, _translate("PPTSLauncher", "YOLO"))
