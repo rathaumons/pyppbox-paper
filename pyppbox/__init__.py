@@ -25,7 +25,7 @@ __version__ = '1.0b6'
 __author__ = 'Ratha SIV (rathaROG)'
 __homepage__ = 'https://github.com/rathaumons'
 __description__ = 'Python toolbox for people tracking system'
-__url__ = 'https://github.com/rathaumons/pyppbox.git'
+__url__ = 'https://github.com/rathaumons/pyppbox-paper.git'
 
 
 # Important
