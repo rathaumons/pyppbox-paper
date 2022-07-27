@@ -1,4 +1,4 @@
-# Welcome to pyppbox !
+# Welcome to pyppbox (Paper Edition) !
 
 ## This repo includes OpenPose and is for those who want to reproduce the results in the paper.
 
@@ -64,7 +64,7 @@ pyppbox.launchGUI()
 
 ## 📝 Documentation? 
 
-* **[COMING SOON ⌛](https://github.com/rathaumons/pyppbox)**
+* **[COMING SOON ⌛](https://github.com/rathaumons/pyppbox-paper)**
 * Meanwhile you can check [the examples here](https://github.com/rathaumons/pyppbox-paper/tree/main/examples) ! 
 
 ## 🔗 Citation
