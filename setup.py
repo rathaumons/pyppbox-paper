@@ -126,7 +126,7 @@ def main():
 
 
 def get_and_set_info_static():
-    return "1.0b9+paper"
+    return "1.0b10+paper"
 
 
 class EmptyListWithLength(list):
