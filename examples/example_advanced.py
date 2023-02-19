@@ -1,17 +1,14 @@
 """
     pyppbox: Toolbox for people detecting, tracking, and re-identifying.
     Copyright (C) 2022 UMONS-Numediart
-
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
-
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
-
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
@@ -40,10 +37,6 @@ detectors_config = [
     'model_weights': 'dt_yolocv/yolov4.weights', 'model_resolution_width': 416, 
     'model_resolution_height': 416, 'repspoint_callibration': 0.25}, 
     
-    {'dt_name': 'OpenPose', 'hand': False, 'model_pose': 'BODY_25', 
-    'model_folder': 'dt_openpose/models', 'model_resolution': '-1x256', 
-    'output_resolution': '-1x-1', 'number_people_max': 0, 'disable_blending': False}, 
-    
     {'dt_name': 'GT', 'gt_file': 'tmp/gt/realID_hard_sur.txt', 
     'input_gt_map_file': 'tmp/gt/input_gt_map.txt'}
 ]
@@ -64,7 +57,7 @@ pyppbox.setMainCFG(main_config)
 
 try:
 
-    pmg = PManager()
+    pmg = PManager(enableEval=True)
     
     input_source = pmg.getInputFile()
     print("Input video: " + str(input_source))
@@ -160,4 +153,3 @@ try:
 except Exception as e:
     print(e)
     sys.exit(-1)
-

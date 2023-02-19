@@ -26,7 +26,7 @@ import yaml
 from yaml.loader import SafeLoader
 from .utils.deepreid_model_dict import ModelDictionary
 from .utils.mystrings import MyStrings
-from .utils.mytools import getFileName, joinFPathFull, normalizePathFDS, customDumpSingleDoc, customDumpMultiDoc
+from .utils.mytools import getFileName, joinFPathFull, normalizePathFDS, customDumpSingleDoc, customDumpMultiDoc, getAncestorDir, getAbsPathFDS
 
 class MyStruct(object):
 
@@ -246,6 +246,12 @@ class RCFGDeepReID(object):
         self.model_name = rcfg['model_name']
         self.model_path = joinFPathFull(root_dir, rcfg['model_path'])
         self.min_confidence = rcfg['min_confidence']
+        self.setExtra()
+    
+    def setExtra(self):
+        self.base_model_path = getAbsPathFDS(os.path.join(getAncestorDir(self.model_path, 1), 'base'))
+        self.unk_did = self.mstruct.str.unk_did
+        self.err_did = self.mstruct.str.err_did
 
     def getDocument(self):
         deepreid_doc = {"ri_name": "DeepReID",
@@ -423,7 +429,7 @@ class MyCFGHeaderNote(object):
                 "# classifier_pkl: ri_deepreid/classifier/gta5_mlfn.pkl\n"
                 "# train_data: ri_deepreid/data\n"
                 "# model_name: mlfn\n"
-                "# model_path: ri_deepreid/pretrained/torchreid/mlfn-9cb5a267.pth.tar\n"
+                "# model_path: ri_deepreid/pretrained/base/mlfn-9cb5a267.pth.tar\n"
                 "# min_confidence: 0.35\n"
                 "###########################################################\n")
         return header

@@ -30,12 +30,12 @@ This repo was reinitiated from version 1.0b9. The complete history is available 
 ## 🚀 Setup `pyppbox`
 
 ### Option 1: Use the [prebuilt WHL file here](https://drive.google.com/open?id=1NhECyYtvh-sx5GM-GnSdcuHAl2TMyLmW)
-* `pip install pyppbox-1.0b9+paper-cp39-cp39-win_amd64.whl`
+* `pip install pyppbox-xxx.whl`
 
 ### Option 2: Build your own `pyppbox`
 * Download [the extra models & weights](https://drive.google.com/open?id=149VQPQw-Nxz0X5nwGritFzHpV_oQTDDm) and extract to the root [`pyppbox-paper`](https://github.com/rathaumons/pyppbox-paper/)
 * Create WHL by running `creat_whl.cmd`
-* Install newly created WHL `pip install pyppbox-1.0b9+paper-cp39-cp39-win_amd64.whl`
+* Inside `dist`, install the newly created WHL `pip install pyppbox-xxx.whl`
 
 ### Quick Test
 * On your terminal or CMD:
@@ -53,15 +53,17 @@ pyppbox.launchGUI()
 
 ## 🔗 Citation
 
-* Extension of PoseTReID paper (Pre-printed on ARXIV):
+* Extension of PoseTReID paper ([Pre-printed on ARXIV](https://doi.org/10.48550/arxiv.2205.10086)):
 ```
-@misc{https://doi.org/10.48550/arxiv.2205.10086,
-  doi = {10.48550/ARXIV.2205.10086},
-  url = {https://arxiv.org/abs/2205.10086},
-  author = {Siv, Ratha and Mancas, Matei and Gosselin, Bernard and Valy, Dona and Sreng, Sokchenda},
-  title = {People Tracking and Re-Identifying in Distributed Contexts: Extension of PoseTReID},
-  publisher = {arXiv},
-  year = {2022},
+@INPROCEEDINGS{9946587,
+  author={Siv, Ratha and Mancas, Matei and Gosselin, Bernard and Valy, Dona and Sreng, Sokchenda},
+  booktitle={2022 9th International Conference on Electrical Engineering, Computer Science and Informatics (EECSI)}, 
+  title={People Tracking and Re-Identifying in Distributed Contexts: Extension Study of PoseTReID}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={337-342},
+  doi={10.23919/EECSI56542.2022.9946587}}
 ```
 
 * Original PoseTReID paper:
