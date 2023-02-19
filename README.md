@@ -5,7 +5,7 @@ This repo was reinitiated from version 1.0b9. The complete history is available 
 
 ### ℹ️ This repo includes [`OpenPose`](https://github.com/CMU-Perceptual-Computing-Lab/openpose) submodule.
 
-### ℹ️ For GPLv3+ edition (Without OpenPose), please check our [`pyppbox` here](https://github.com/rathaumons/pyppbox).
+### ℹ️ For GPLv3+ edition (Without OpenPose), please check [our `pyppbox` here](https://github.com/rathaumons/pyppbox).
 
 ## 🐍📦 [**`pyppbox`**](https://github.com/rathaumons/pyppbox) = Python + People + Toolbox 
 
@@ -55,7 +55,7 @@ pyppbox.launchGUI()
 
 * Extension of PoseTReID paper ([Pre-printed on ARXIV](https://doi.org/10.48550/arxiv.2205.10086)):
 ```
-@INPROCEEDINGS{9946587,
+@INPROCEEDINGS{ptreid9946587,
   author={Siv, Ratha and Mancas, Matei and Gosselin, Bernard and Valy, Dona and Sreng, Sokchenda},
   booktitle={2022 9th International Conference on Electrical Engineering, Computer Science and Informatics (EECSI)}, 
   title={People Tracking and Re-Identifying in Distributed Contexts: Extension Study of PoseTReID}, 
