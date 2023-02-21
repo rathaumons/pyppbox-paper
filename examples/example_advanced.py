@@ -38,7 +38,11 @@ detectors_config = [
     {'dt_name': 'YOLO', 'nms_threshold': 0.45, 'conf_threshold': 0.5, 
     'class_file': 'dt_yolocv/coco.names', 'model_cfg_file': 'dt_yolocv/yolov4.cfg', 
     'model_weights': 'dt_yolocv/yolov4.weights', 'model_resolution_width': 416, 
-    'model_resolution_height': 416, 'repspoint_callibration': 0.25}, 
+    'model_resolution_height': 416, 'repspoint_callibration': 0.25},
+    
+    {'dt_name': 'OpenPose', 'hand': False, 'model_pose': 'BODY_25', 
+    'model_folder': 'dt_openpose/models', 'model_resolution': '-1x256', 
+    'output_resolution': '-1x-1', 'number_people_max': 0, 'disable_blending': False}, 
     
     {'dt_name': 'GT', 'gt_file': 'tmp/gt/realID_hard_sur.txt', 
     'input_gt_map_file': 'tmp/gt/input_gt_map.txt'}
